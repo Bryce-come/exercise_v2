@@ -27,6 +27,7 @@ for i in range(Q):
 a = np.array(q1)
 a1 = a[np.lexsort(a.T)]
 
+
 def func1(Q, arr, m, n):
     for i in range(Q):
         temp = arr[i][m]
@@ -34,12 +35,11 @@ def func1(Q, arr, m, n):
         arr[i][n] = temp
     return arr
 
-def fun2c(Q, arr, k):# 转int
+
+def fun2c(Q, arr, k):  # 转int
     for i in range(Q):
         int(arr[i][k])
     return arr
-
-
 
 
 c = func1(Q, a, 1, 2)

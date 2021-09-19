@@ -18,6 +18,8 @@ def getnum(s, n):
 
 
 print(getnum(s, n))
+
+
 ######################
 
 def decode(stack):
@@ -69,20 +71,21 @@ for i in range(n):
 # 或者
 
 import math
+
 t = int(input())
 for _ in range(t):
     min_money = 0
-    a,b,c = list(map(int,input().split()))
-    part_1 = (a // 1500) * min(3*b,c)
-    part_2 = min(c,math.ceil((a%1500)/500) * b)
+    a, b, c = list(map(int, input().split()))
+    part_1 = (a // 1500) * min(3 * b, c)
+    part_2 = min(c, math.ceil((a % 1500) / 500) * b)
     print(part_1 + part_2)
 
 #############
 
 import sys
 
-def min_len(nums, subnums, lengths):
 
+def min_len(nums, subnums, lengths):
     sub_dict = {}
     for i in range(len(subnums)):
         sub_dict[subnums[i]] = -1
@@ -114,7 +117,6 @@ def min_len(nums, subnums, lengths):
 total = int(input())
 lengths = []
 for i in range(total):
-
     sys.stdin.readline()
     nums = sys.stdin.readline().strip().split()
     nums = list(map(int, nums))

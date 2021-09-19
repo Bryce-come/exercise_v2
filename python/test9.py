@@ -19,8 +19,8 @@ import sys
 n = int(sys.stdin.readline().strip())
 q1 = []
 for i in range(n):
-        line = sys.stdin.readline().strip()
-        q1.append(line)
+    line = sys.stdin.readline().strip()
+    q1.append(line)
 
 for item in q1:
     if 'o' in item or 'y' in item or 'e' in item or 'a' in item or 's' in item:
