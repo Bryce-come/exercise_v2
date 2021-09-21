@@ -1,4 +1,14 @@
 # 冒泡排序
+'''
+ * 排序法    平均时间    最差情形        稳定度 额外空间     备注
+ * 冒泡     O(n2)     O(n2)     稳定    O(1)    n小时较好
+ * 选择      O(n2)     O(n2)  不稳定   O(1)   n小时较好
+ * 插入      O(n2)     O(n2)       稳定     O(1)    大部分已排序时较好
+ * 基数      O(logRB)  O(logRB)    稳定      O(n)
+ * 快速     O(nlogn)  O(n2)     不稳定 O(nlogn)    n大时较好
+ * 归并      O(nlogn)  O(nlogn)  稳定      O(1)    n大时较好
+ * 堆      O(nlogn)  O(nlogn)    不稳定 O(1)    n大时较好
+'''
 def BubbleSort(lst):
     n = len(lst)
     if n <= 1:

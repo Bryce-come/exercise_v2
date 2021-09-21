@@ -18,7 +18,7 @@ def QuickSort(lst):
             # 如果列表前边的数,比基准数小或相等,则后移一位直到有比基准数大的数出现
             while left < right and arr[left] <= arr[key]:
                 left += 1
-            # 此时已找到一个比基准大的书，和一个比基准小的数，将他们互换位置
+            # 此时已找到一个比基准大的数，和一个比基准小的数，将他们互换位置
             (arr[left], arr[right]) = (arr[right], arr[left])
 
         # 当从两边分别逼近，直到两个位置相等时结束，将左边小的同基准进行交换
